@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Miti-Miti: divide la cuenta con un solo QR | Deuna</title>
+  <meta name="description" content="Divide un pago grupal en segundos con un solo código QR en Deuna, sin agregar contactos ni sacar la calculadora. Conoce Miti-Miti.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+  <header class="app-header">
+    <a class="greeting" href="index.html" aria-label="Miti-Miti, inicio">
+      <span class="avatar" aria-hidden="true">MM</span>
+      <span>¡Hola! <span class="wave" aria-hidden="true">👋</span></span>
+    </a>
+    <nav class="app-nav" aria-label="Principal">
+      <a href="comparar.html">Comparar</a>
+      <a href="unete.html">Únete</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+    <a class="header-icon" href="comunidad.html" aria-label="Novedades de Acolita">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg>
+      <span class="notification-dot" aria-hidden="true"></span>
+    </a>
+  </header>
+
+  <main class="app-main">
+    <section class="transfer-promo" aria-label="Miti-Miti">
+      <div>
+        <p class="eyebrow">Miti-Miti</p>
+        <h1>Rápido y sin complicaciones</h1>
+        <p>Divide la cuenta con tu grupo, sin sacar la calculadora.</p>
+      </div>
+      <span class="promo-art" aria-hidden="true">💸</span>
+      <a class="promo-link" href="unete.html" aria-label="Conoce cómo funciona Miti-Miti"></a>
+    </section>
+
+    <section class="balance-card" aria-labelledby="balance-title">
+      <div>
+        <p id="balance-title" class="balance-label">A cada quien le toca</p>
+        <output id="balance" class="balance-value" aria-live="polite">$ 12,00</output>
+        <p class="balance-caption">Tu parte estimada de la cuenta</p>
+      </div>
+      <a class="round-arrow" href="#calculadora" aria-label="Calcula tu parte">›</a>
+    </section>
+
+    <section class="feature-section" aria-label="Cómo funciona">
+      <a class="feature-card" href="unete.html">
+        <span>
+          <span class="eyebrow">Con Miti-Miti</span>
+          <strong>Conoce cómo pagar<br>sin complicarte</strong>
+        </span>
+        <span class="feature-art" aria-hidden="true">📲</span>
+      </a>
+      <div class="carousel-dots" aria-hidden="true"><span></span><span></span></div>
+    </section>
+
+    <section class="shortcuts-section" aria-label="Accesos rápidos">
+      <div class="shortcut-grid">
+        <a class="shortcut" href="#calculadora"><span class="shortcut-icon">💸</span><span>Dividir</span></a>
+        <a class="shortcut" href="unete.html"><span class="shortcut-icon">👛</span><span>Cómo<br>funciona</span></a>
+        <a class="shortcut" href="#calculadora"><span class="shortcut-icon">🧮</span><span>Calcular<br>mi parte</span></a>
+        <a class="shortcut" href="comparar.html"><span class="shortcut-icon">🔎</span><span>Comparar<br>opciones</span></a>
+        <a class="shortcut" href="unete.html"><span class="shortcut-icon">🎁</span><span>Únete al<br>grupo</span></a>
+        <a class="shortcut" href="comunidad.html"><span class="shortcut-icon">🧑🏻</span><span>Acolita</span></a>
+        <a class="shortcut" href="comparar.html#preguntas"><span class="shortcut-icon">🛡️</span><span>Preguntas<br>frecuentes</span></a>
+        <a class="shortcut" href="comunidad.html"><span class="shortcut-icon">🤝</span><span>Conoce la<br>comunidad</span></a>
+      </div>
+    </section>
+
+    <section class="promotions-section" aria-labelledby="promotions-title">
+      <h2 id="promotions-title">Divide la cuenta a tu manera</h2>
+      <div class="promo-cards">
+        <a class="promo-tile promo-tile-purple" href="unete.html">
+          <span class="tile-emoji" aria-hidden="true">🧾</span>
+          <span class="tile-copy"><strong>Una cuenta, un QR</strong><span>Todos pagan su parte fácilmente.</span></span>
+        </a>
+        <a class="promo-tile promo-tile-mint" href="comunidad.html">
+          <span class="tile-emoji" aria-hidden="true">🫶</span>
+          <span class="tile-copy"><strong>Si te falta, Acolita</strong><span>Tu grupo te puede ayudar.</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="calculadora" class="calculator-section" aria-labelledby="calculator-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Sin hacer cuentas</p><h2 id="calculator-title">Calcula tu parte</h2></div>
+        <span class="heading-emoji" aria-hidden="true">✨</span>
+      </div>
+      <div class="calculator-card">
+        <label for="m">Total de la cuenta (USD)</label>
+        <div class="input-wrap"><span aria-hidden="true">$</span><input id="m" type="number" min="0" step="0.01" value="48" inputmode="decimal"></div>
+        <label for="n">Personas en el grupo</label>
+        <div class="input-wrap"><span aria-hidden="true">👥</span><input id="n" type="number" min="1" step="1" value="4" inputmode="numeric"></div>
+        <output id="r" aria-live="polite">Cada quien paga $12.00</output>
+      </div>
+    </section>
+
+    <section class="why-section" aria-labelledby="why-title">
+      <h2 id="why-title">Salir juntos, cuentas claras</h2>
+      <div class="why-grid">
+        <article class="why-card"><span aria-hidden="true">🧮</span><h3>Sin hacer cuentas</h3><p>El total se divide entre todos, automáticamente.</p></article>
+        <article class="why-card"><span aria-hidden="true">💬</span><h3>Sin cobrar con pena</h3><p>Cada persona paga su parte desde su teléfono.</p></article>
+        <article class="why-card"><span aria-hidden="true">📱</span><h3>Sin agregar contactos</h3><p>Tu grupo se une escaneando un solo QR.</p></article>
+      </div>
+      <a class="text-link" href="comparar.html">Compara otras opciones <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Proyecto académico (concepto, no es un producto oficial de Deuna).</p>
+    <a href="comparar.html">Comparar</a><a href="unete.html">Únete</a><a href="comunidad.html">Comunidad</a>
+  </footer>
+
+  <div class="action-bar" aria-label="Acciones rápidas">
+    <a class="action-button action-outline" href="#calculadora"><span aria-hidden="true">➤</span> Dividir cuenta</a>
+    <a class="action-button action-solid" href="unete.html"><span aria-hidden="true">▦</span> Pagar con QR</a>
+  </div>
+  <nav class="bottom-nav" aria-label="Navegación inferior">
+    <a href="index.html" aria-current="page"><span aria-hidden="true">⌂</span>Inicio</a>
+    <a href="comparar.html"><span aria-hidden="true">◇</span>Comparar</a>
+    <a href="comunidad.html"><span aria-hidden="true">▣</span>Acolita</a>
+    <a href="unete.html"><span aria-hidden="true">◎</span>Únete</a>
+  </nav>
+  <script src="main.js" defer></script>
+</body>
+</html>
